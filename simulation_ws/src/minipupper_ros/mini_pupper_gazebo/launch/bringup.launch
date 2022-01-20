@@ -1,9 +1,9 @@
 <launch>
     <arg name="robot_name"              default="/"/>  <!-- Change this for namespacing. -->
     <arg name="base_frame"             default="base_link"/> <!-- Link name of floating base. Do not touch this. -->
-    <arg name="joints_map_file"        default="$(find mini_pupper)/config/joints/joints.yaml"/> <!--Path to list of joint names. Do not touch this. -->
-    <arg name="links_map_file"         default="$(find mini_pupper)/config/links/links.yaml"/> <!-- Path to list of link names. Do not touch this. -->
-    <arg name="gait_config_file"       default="$(find mini_pupper)/config/gait/gait.yaml"/>  <!-- Path to gait parameters. Do not touch this. -->
+    <arg name="joints_map_file"        default="$(find mini_pupper_gazebo)/config/joints/joints.yaml"/> <!--Path to list of joint names. Do not touch this. -->
+    <arg name="links_map_file"         default="$(find mini_pupper_gazebo)/config/links/links.yaml"/> <!-- Path to list of link names. Do not touch this. -->
+    <arg name="gait_config_file"       default="$(find mini_pupper_gazebo)/config/gait/gait.yaml"/>  <!-- Path to gait parameters. Do not touch this. -->
     <arg name="description_file"       default="$(find mini_pupper_description)/urdf/mini_pupper_description.urdf"/> <!-- Path to URDF file Do not touch this. -->
     <arg name="gazebo"                 default="false" /> <!-- Set to true during simulation. This is auto-set to true from gazebo.launch. -->
     <arg name="rviz"                   default="false"/> <!-- Set to true to run rviz in parallel. -->
