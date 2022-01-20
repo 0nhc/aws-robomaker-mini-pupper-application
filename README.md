@@ -19,6 +19,8 @@ pip3 install -U colcon-common-extensions colcon-ros-bundle
 ### 2.2 install dependencies
 ```sh
 sudo apt install ros-melodic-ecl-threads ros-melodic-robot-localization  ros-melodic-controller-manager ros-melodic-hector-sensors-description ros-melodic-map-server ros-melodic-move-base ros-melodic-iris-lama ros-melodic-iris-lama-ros sphinxsearch
+```
+```sh
 pip install --upgrade requests
 pip3 install --upgrade requests
 ```
