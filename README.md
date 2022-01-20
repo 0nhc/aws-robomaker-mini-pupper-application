@@ -107,8 +107,8 @@ in section "robot application"</br>
 choose "mini-pupper-robot"</br>
 
 in section "robot application configuration"</br>
-set "launch package name" to "hello_world_robot"</br>
-set "launch file" to "rotate.launch"</br>
+set "launch package name" to "mini_pupper_navigation"</br>
+set "launch file" to "navigate.launch"</br>
 
 * step 3
 
@@ -120,7 +120,7 @@ in section "robot application"</br>
 choose "mini-pupper-simulation"</br>
 
 in section "robot application configuration"</br>
-set "launch package name" to "mini_pupper"</br>
+set "launch package name" to "mini_pupper_gazebo"</br>
 set "launch file" to "gazebo.launch"</br>
 
 * step 4
