@@ -5,7 +5,7 @@ create a development environment in aws robomaker console,</br>
 remember to set "pre-installed robot software suite" to "Melodic"</br>
 </br>
 ## 2. configure your development environment
-* install colcon
+* step1 install colcon
 
 
 ```sh
@@ -15,14 +15,14 @@ pip3 install -U setuptools
 pip3 install -U colcon-common-extensions colcon-ros-bundle
 ```
 
-* dependencies
+* step2 install dependencies
 ```sh
 sudo apt install ros-melodic-ecl-threads ros-melodic-robot-localization  ros-melodic-controller-manager ros-melodic-hector-sensors-description ros-melodic-map-server ros-melodic-move-base ros-melodic-iris-lama ros-melodic-iris-lama-ros sphinxsearch
 pip install --upgrade requests
 pip3 install --upgrade requests
 ```
 
-* configure the application
+* step3 configure the application
 
 
 ```sh
@@ -40,14 +40,14 @@ echo "source ~/environment/aws-robomaker-mini-pupper-application/simulation_ws/i
 source ~/.bashrc
 ```
 
-* create bucket
+* step4 create aws S3 buckets
 
 
 create S3 buckets for mini pupper</br>
 [check this link](https://s3.console.aws.amazon.com/s3/bucket/create?region=ap-northeast-1)</br>
 set "bucket name" to "mini-pupper-bucket"</br>
 
-* upload bundled file to bucket
+* step5 upload bundle file to the buckets
 
 
 return to aws development environment</br>
