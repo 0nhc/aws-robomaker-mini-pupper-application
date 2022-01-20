@@ -1,6 +1,6 @@
 # instructions for creating robomaker environment for mini pupper
-## 1.create development environment
-create development environment in aws robomaker console,</br>
+## 1.create a development environment
+create a development environment in aws robomaker console,</br>
 [check this link](https://ap-northeast-1.console.aws.amazon.com/robomaker/home?region=ap-northeast-1#ides/new)</br>
 remember to set "pre-installed robot software suite" to "Melodic"</br>
 </br>
