@@ -11,6 +11,8 @@ remember to set "pre-installed robot software suite" to "Melodic"</br>
 ```sh
 sudo apt-get update
 sudo apt-get install python3-pip python3-apt
+```
+```sh
 pip3 install -U setuptools
 pip3 install -U colcon-common-extensions colcon-ros-bundle
 ```
