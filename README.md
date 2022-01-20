@@ -119,3 +119,6 @@ set "launch file" to "gazebo.launch"</br>
 
 ### 5.4
 just click "create"</br>
+
+## 6 Just Play With It
+![1](imgs/1.png)
