@@ -29,6 +29,7 @@ pip3 install --upgrade requests
 ```sh
 cd ~/environment
 git clone --recursive https://github.com/0nhc/aws-robomaker-mini-pupper-application.git
+cd aws-robomaker-mini-pupper-application
 cd robot_ws
 colcon build
 colcon bundle
