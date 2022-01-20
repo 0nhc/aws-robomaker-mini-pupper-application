@@ -42,24 +42,22 @@ source ~/.bashrc
 
 * step 4 create aws S3 buckets
 
-```
+
 create S3 buckets for mini pupper</br>
 [check this link](https://s3.console.aws.amazon.com/s3/bucket/create?region=ap-northeast-1)</br>
 set "bucket name" to "mini-pupper-bucket"</br>
-```
+
 
 * step 5 upload bundle file to the buckets
 
 
-```
 return to aws development environment</br>
-```
 ```sh
 cd ~/environment/aws-robomaker-mini-pupper-application/robot_ws/bundle
 aws s3api put-object --bucket mini-pupper-bucket --key mnpp_robot.tar --body output.tar
 cd ~/environment/aws-robomaker-mini-pupper-application/simulation_ws/bundle
 aws s3api put-object --bucket mini-pupper-bucket --key mnpp_sim.tar --body output.tar
-```
+
 
 ## 3. create robot application
 return to robomaker console</br>
@@ -90,7 +88,7 @@ then create a new simulation job</br>
 
 * step 1
 
-```
+
 in section "simulation job details"</br>
 set "simulation job duration" to 1 hour(for saving money)</br>
 set "robot software suite" to "Melodic"</br>
@@ -99,11 +97,10 @@ set "IAM role" to whatever you want</br>
 in section "simulation job output"</br>
 click "browse S3"</br>
 choose "mini-pupper-bucket"</br>
-```
 
 * step 2
 
-```
+
 in section "choose method"</br>
 click "select existing application"</br>
 
@@ -113,11 +110,11 @@ choose "mini-pupper-robot"</br>
 in section "robot application configuration"</br>
 set "launch package name" to "mini_pupper_navigation"</br>
 set "launch file" to "navigate.launch"</br>
-```
+
 
 * step 3
 
-```
+
 in section "choose method"</br>
 click "select existing application"</br>
 
@@ -127,10 +124,9 @@ choose "mini-pupper-simulation"</br>
 in section "robot application configuration"</br>
 set "launch package name" to "mini_pupper_gazebo"</br>
 set "launch file" to "gazebo.launch"</br>
-```
+
 
 * step 4
 
-```
+
 just click "create"</br>
-```
