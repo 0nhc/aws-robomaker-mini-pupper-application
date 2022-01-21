@@ -3,6 +3,7 @@
 create a development environment in aws robomaker console,</br>
 [check this link](https://ap-northeast-1.console.aws.amazon.com/robomaker/home?region=ap-northeast-1#ides/new)</br>
 remember to set "pre-installed robot software suite" to "Melodic"</br>
+![2](imgs/2.png)
 </br>
 ## 2. configure your development environment
 ### 2.1 install colcon
@@ -46,10 +47,11 @@ source ~/.bashrc
 create S3 buckets for mini pupper</br>
 [check this link](https://s3.console.aws.amazon.com/s3/bucket/create?region=ap-northeast-1)</br>
 set "bucket name" to "mini-pupper-bucket"</br>
-
+![3](imgs/3.png)
 
 ### 2.5 upload bundle file to the buckets
 return to aws development environment</br>
+![4](imgs/4.png)
 ```sh
 cd ~/environment/aws-robomaker-mini-pupper-application/robot_ws/bundle
 aws s3api put-object --bucket mini-pupper-bucket --key mnpp_robot.tar --body output.tar
@@ -65,8 +67,10 @@ set "name" to "mini-pupper-robot"</br>
 set "robot software suite" to "Melodic"</br>
 set "application" to "provide a colcon-bundled source file"</br>
 and then click "browse S3"</br>
+![5](imgs/5.png)
 choose "mini-pupper-bucket/mnpp_robot.tar"</br>
 then click "create"</br>
+![6](imgs/6.png)
 
 ## 4. create simulation application
 return to robomaker console</br>
@@ -76,8 +80,10 @@ set "name" to "mini-pupper-simulation"</br>
 set "robot software suite" to "Melodic"</br>
 set "application" to "provide a colcon-bundled source file"</br>
 and then click "browse S3"</br>
+![7](imgs/7.png)
 choose "mini-pupper-bucket/mnpp_sim.tar"</br>
 then click "create"</br>
+![8](imgs/8.png)
 
 ## 5. create simulation job
 return to robomaker console</br>
@@ -89,10 +95,12 @@ in section "simulation job details"</br>
 set "simulation job duration" to 1 hour(for saving money)</br>
 set "robot software suite" to "Melodic"</br>
 set "IAM role" to whatever you want</br>
-
+![9](imgs/9.png)
 in section "simulation job output"</br>
 click "browse S3"</br>
+![10](imgs/10.png)
 choose "mini-pupper-bucket"</br>
+![11](imgs/11.png)
 
 ### 5.2
 in section "choose method"</br>
@@ -104,7 +112,7 @@ choose "mini-pupper-robot"</br>
 in section "robot application configuration"</br>
 set "launch package name" to "mini_pupper_navigation"</br>
 set "launch file" to "navigate.launch"</br>
-
+![12](imgs/12.png)
 
 ### 5.3
 in section "choose method"</br>
@@ -116,9 +124,13 @@ choose "mini-pupper-simulation"</br>
 in section "robot application configuration"</br>
 set "launch package name" to "mini_pupper_gazebo"</br>
 set "launch file" to "gazebo.launch"</br>
+![13](imgs/13.png)
 
 ### 5.4
 just click "create"</br>
+![14](imgs/14.png)
 
 ## 6 Just Play With It
+![15](imgs/15.png)
+![16](imgs/16.png)
 ![1](imgs/1.png)
