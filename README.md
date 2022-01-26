@@ -1,10 +1,12 @@
-# Instructions for Creating an Robomaker Environment for Mini Pupper
-## 1.Create a Development Environment
+# Instructions for Creating an AWS RoboMaker Environment for Mini Pupper
+![aws](imgs/aws.gif)
+## 1.Create a AWS RoboMaker Intergrated Development Environment
 create a development environment in aws robomaker console,</br>
 [check this link](https://ap-northeast-1.console.aws.amazon.com/robomaker/home?region=ap-northeast-1#ides/new)</br>
 remember to set "pre-installed robot software suite" to "Melodic"</br>
 ![2](imgs/2.png)
 </br>
+![17](imgs/17.png)
 ## 2. Configure Your Development Environment
 ### 2.1 Install Colcon
 
@@ -61,7 +63,7 @@ cd ~/environment/aws-robomaker-mini-pupper-application/simulation_ws/bundle
 aws s3api put-object --bucket mini-pupper-bucket --key mnpp_sim.tar --body output.tar
 ```
 
-## 3. Create an Robot Application
+## 3. Create a Robot Application
 return to robomaker console</br>
 then create a new robot application</br>
 [check this link](https://ap-northeast-1.console.aws.amazon.com/robomaker/home?region=ap-northeast-1#robotApplications/new)</br>
